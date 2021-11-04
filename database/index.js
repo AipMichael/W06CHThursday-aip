@@ -1,5 +1,6 @@
 const chalk = require("chalk");
 const mongoose = require("mongoose");
+const debug = require("debug")("things:database");
 
 mongoose.connect(process.env.MONGODB_STRING, (error) => {
   if (error) {
