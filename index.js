@@ -21,11 +21,11 @@ let port = process.env.SERVER_PORT || 5000;
       choices: [
         {
           name: "Pruebas",
-          value: "test-things",
+          value: "testThings",
         },
         {
           name: "Producción",
-          value: "things",
+          value: "produceThings",
         },
       ],
       default: "test-things",
@@ -41,5 +41,6 @@ let port = process.env.SERVER_PORT || 5000;
   console.log(answers);
   port = +answers.apis;
 
+  database(answers.db);
   initializeServer(port);
 })();
