@@ -7,6 +7,6 @@ const thingSchema = new Schema({
   },
 });
 
-const Thing = model("Thing", thingSchema);
+const Thing = model("Thing", thingSchema, "prueba-things");
 
 module.exports = Thing;
