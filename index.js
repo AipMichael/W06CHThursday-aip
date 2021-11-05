@@ -28,7 +28,7 @@ let port = process.env.SERVER_PORT || 5000;
           value: "produceThings",
         },
       ],
-      default: "test-things",
+      default: "testThings",
     },
     {
       name: "edit",
